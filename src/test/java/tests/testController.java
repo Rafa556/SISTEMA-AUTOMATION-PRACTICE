@@ -19,13 +19,9 @@ public class testController {
         navegador.findElement(By.xpath("//a[@data-id-product='2']")).click();
         navegador.findElement(By.id("layer_cart")).findElement(By.linkText("Proceed to checkout")).click();
 
-        String produto = navegador.findElement(By.cssSelector("#order-detail-content .product-name a")).getText();
-
-        assertEquals("Blouse",produto);
-
         navegador.findElement(By.linkText("Proceed to checkout")).click();
 
-        navegador.findElement(By.name("email_create")).sendKeys("Rafa@gft.com.br");
+        navegador.findElement(By.name("email_create")).sendKeys("Rafa776@gft.com.br");
 
         navegador.findElement(By.id("SubmitCreate")).click();
 
